@@ -1,48 +1,26 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "attendence_db";
 
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+class Database{
 
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully sabir";
+    private $servername = "localhost";
+    private $username = "root";
+    private $password = "";
+    private $dbname = "attendence_db";
+    public $conn = null;
 
-    //actual code starts
-
-    //to make table code
-    try {
-        //sql cmd 
-        $cmd = "create table tab2 (
-            id int auto_increment primary key,
-            col2 varchar(20)
-        )";
-
-        //prepaid statement
-        $st = $conn->prepare($cmd);
-        $st->execute();
-    } 
-    catch(PDOException $e) {
-        echo "<br>table is already created<br> " . $e->getMessage();
-    }
+    public function __construct() {  
+        try {
+            $this->conn = new PDO("mysql:host=$this->servername;dbname=$this->dbname", $this->username, $this->password);
     
-    //practice of table creation
-    try {
-        $cmd = "create table tab3 (
-            sid int ,
-            sName varchar(20),
-            sContact int
-        )";
-        $st = $conn->prepare($cmd);
-        $st->execute();
-    } catch (PDOException $e) {
-        echo "<br>table creation practice failed<br>" . $e->getMessage();
+            // set the PDO error mode to exception
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            echo "Connected successfully sabir";
+    
+            
+        } catch(PDOException $e) {
+            echo "Connection failed: " . $e->getMessage();
+        }
     }
 
-} catch(PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
 }
 ?>
