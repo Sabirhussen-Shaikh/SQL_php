@@ -128,19 +128,35 @@ echo"<br>table attendence is NOT created<br>" .  $e->getMessage();
 }
 
 // ******************************************** 
+
 $c = "insert into student_details
-(id,roll_no,name)
-values
-(1,'CSB21001','Emily Johnson'),
-(2,'CSB21002','Michael Smith'),
-(3,'CSB21003','Sarah Martinez'),
-(4,'CSB21004','David Brown'),
-(5,'CSB21005','Olivia Williams'),
-(6,'CSB21006','Christopher Davis'),
-(7,'CSB21007','Sophia Wilson'),
-(8,'CSB21008','Ethan Anderson'),
-(9,'CSB21009','Emma Miller'),
-(10,'CSB21010','James Jones')";
+    (id,roll_no,name)
+    values
+    (1,'CSB21001','Emily Johnson'),
+    (2,'CSB21002','Michael Smith'),
+    (3,'CSB21003','Sarah Martinez'),
+    (4,'CSB21004','David Brown'),
+    (5,'CSB21005','Olivia Williams'),
+    (6,'CSB21006','Christopher Davis'),
+    (7,'CSB21007','Sophia Wilson'),
+    (8,'CSB21008','Ethan Anderson'),
+    (9,'CSB21009','Emma Miller'),
+    (10,'CSB21010','James Jones'),
+    (11,'CSB21011','Ava Taylor'),
+    (12,'CSB21012','Daniel Thomas'),
+    (13,'CSM21001','Mia Garcia'),
+    (14,'CSM21002','William White'),
+    (15,'CSM21003','Chloe Martin'),
+    (16,'CSM21004','Benjamin Clark'),
+    (17,'CSM21005','Isabella Hall'),
+    (18,'CSM21006','Alexander Lee'),
+    (19,'CSM21007','Grace Lewis'),
+    (20,'CSM21008','Samuel Turner'),
+    (21,'CSM21009','Natalie Harris'),
+    (22,'CSM21010','Caleb Baker'),
+    (23,'CSM21011','Lily Reed'),
+    (24,'CSM21012','Logan Murphy')
+    ";
 
 $s = $dbo->conn->prepare($c);
 try {
@@ -201,6 +217,7 @@ try {
 // ************************************************ 
 
 // copied code 
+
 // $c = "insert into student_details
 // (id,roll_no,name)
 // values
