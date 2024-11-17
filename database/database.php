@@ -14,7 +14,7 @@ class Database{
     
             // set the PDO error mode to exception
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "Connected successfully sabir";
+            //echo "Connected successfully sabir";
     
             
         } catch(PDOException $e) {
