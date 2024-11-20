@@ -11,21 +11,31 @@
             <input type="text" name="saddress" />
         </div>
         <div class="form-group">
-            <label>Class</label>
+            <label>Course</label>
             <select name="class">
                 <option value="" selected disabled>Select Class</option>
-                <option value="1">BCA</option>
-                <option value="2">BSC</option>
-                <option value="3">B.TECH</option>
+                <?php
+                // connecting with sql database
+                $conn = mysqli_connect('localhost', 'root', '', 'attendance_db') or die("connection failed");
+
+                $sql = "select * from course_details ";
+
+                $reult = mysqli_query($conn, $sql) or die('query unsuccessful');
+
+                while ($row = mysqli_fetch_assoc($reult)) {
+                ?>
+                <option value="<?php $row['id']; ?>"><?php echo $row['title']; ?></option>
+                <?php } ?>
             </select>
         </div>
         <div class="form-group">
             <label>Phone</label>
             <input type="text" name="sphone" />
         </div>
-        <input class="submit" type="submit" value="Save"  />
+        <input class="submit" type="submit" value="Save" />
     </form>
 </div>
 </div>
 </body>
+
 </html>
