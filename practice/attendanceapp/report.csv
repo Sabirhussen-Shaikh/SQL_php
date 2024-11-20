@@ -1,0 +1,16 @@
+Session:,"2024 SPRING SEMESTER"
+Course:,"CO321-Database management system lab"
+Faculty:,Pallabi
+total,5
+start,2024-11-01
+end,2024-11-20
+slno,roll_no,name,2024-11-01,2024-11-12,2024-11-16,2024-11-18,2024-11-20,attended,percent
+1,CSB21003,"Ryan Thompson",P,A,P,A,P,3,60
+2,CSB21009,"David Wilson",P,A,P,A,P,3,60
+3,CSB21010,"Sarah Taylor",P,P,P,P,P,5,100
+4,CSB21011,"Michael Martinez",A,P,A,P,P,3,60
+5,CSM21002,"Isabella Rodriguez",P,P,A,P,P,4,80
+6,CSM21003,"Ethan Martinez",A,P,A,A,A,1,20
+7,CSM21006,"Sophia Perez",A,P,A,A,A,1,20
+8,CSM21007,"Alexander Gonzalez",A,P,P,A,A,2,40
+9,CSM21009,"William Martinez",P,P,P,A,A,3,60
