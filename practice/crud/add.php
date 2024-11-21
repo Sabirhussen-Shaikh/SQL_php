@@ -7,8 +7,8 @@
             <input type="text" name="sname" />
         </div>
         <div class="form-group">
-            <label>Address</label>
-            <input type="text" name="saddress" />
+            <label>Roll no</label>
+            <input type="text" name="sroll" />
         </div>
         <div class="form-group">
             <label>Course</label>
@@ -29,8 +29,8 @@
             </select>
         </div>
         <div class="form-group">
-            <label>Phone</label>
-            <input type="text" name="sphone" />
+            <label>email</label>
+            <input type="text" name="semail" />
         </div>
         <input class="submit" type="submit" value="Save" />
     </form>
