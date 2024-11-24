@@ -12,7 +12,7 @@
 <body>
     <div id="wrapper">
         <div id="header">
-            <h1>Crud</h1>
+            <h1>STUDENT REGISTRATION</h1>
         </div>
         <div id="menu">
             <ul>
